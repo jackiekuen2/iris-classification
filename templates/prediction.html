@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <h1>Thank you! Here is the information of your input:</h1>
+</head>
+<body>
+    <ul>
+        <li>Sepal Length (cm): {{session['sep_len']}}</li>
+        <li>Sepal Width (cm): {{session['sep_wid']}}</li>
+        <li>Petal Length (cm): {{session['pet_len']}}</li>
+        <li>Petal Width (cm): {{session['pet_wid']}}</li>
+    </ul>
+    <br>
+    <h2>Your predicted flower class is: {{results}}</h2>
+    <img src="{{image}}" alt="Iris image">
+    <!--
+    <h3>Your predicted flower class are: {{plot1}} and {{plot2}}</h3>
+    -->
+    <br>
+    <img src="{{plot1}}">
+    <br>
+    <img src="{{plot2}}">
+    <br>
+    <a href="./predict"><button>Analyze Again!</button></a>
+</body>
+</html>

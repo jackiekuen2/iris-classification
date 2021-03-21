@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <h1>Hello World!</h1>
+</head>
+<body>
+<h2>Welcome to IRIS prediction</h2>
+<h3>Please enter your flower measurements below:</h3>
+<form method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{form.hidden_tag()}}
+    {{form.sep_len.label}}{{form.sep_len}}
+    <br>
+    {{form.sep_wid.label}}{{form.sep_wid}}
+    <br>
+    {{form.pet_len.label}}{{form.pet_len}}
+    <br>
+    {{form.pet_wid.label}}{{form.pet_wid}}
+    <br>
+    {{form.submit()}}
+</form>
+</body>
+</html>

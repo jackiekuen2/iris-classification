@@ -1,0 +1,5 @@
+# ignore the old model
+trained_models/iris-model-old.pkl
+
+# ignore all ipynb
+*.ipynb
