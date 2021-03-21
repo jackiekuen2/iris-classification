@@ -98,7 +98,7 @@ class FlowerForm(FlaskForm):
     submit = SubmitField('Analyze')
 
 # Endpoint: homepage
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def index():
     # Create instance of the form
     form = FlowerForm()
